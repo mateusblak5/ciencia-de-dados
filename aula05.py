@@ -16,3 +16,10 @@ print(f'Decis: {decis}')
 # Calcular percentis
 percentis = np.percentile(dados, [10, 25, 50, 75, 90])
 print(f'Percentis: {percentis}')
+
+# Visualização por BoxPlot
+plt.boxplot(dados, vert=False)
+plt.title('Bloxplot das notas')
+plt.xlabel('notas')
+plt.show()
+plt.savefig('chart5.png')
